@@ -36,14 +36,117 @@ body {
 <h2>Ramiza Group</h2>
 
 <div class="container">
-  <img src="https://imgur.com/sEu0Gg3" alt="Notebook" style="width:100%;">
+  <img src="https://imgur.com/sEu0Gg3.jpg" alt="Notebook" style="width:100%;">
   <div class="content">
     <h1>Ramiza Group</h1>
     <p>Ramiza Group delivers comprehensive solutions with highly efficient, client-focused sales services tailored to meet your specific needs. We ensure fast, reliable service to guarantee optimal customer satisfaction within the shortest possible time. Additionally, our real estate agency provides professional support in the purchase, sale, and rental of properties with the highest standards of expertise.</p>
   </div>
 </div>
   
+/* NAVBAR */
+nav{
+position:fixed;
+width:100%;
+top:0;
+background:rgba(0,0,0,0,8);backdrop-filter:blur(10px);border-bottom:1px solid #d4af37;
+display:flex;
+justify-content:space-between;
+padding:15px 30px;
+z-index:1000;
+}
 
+nav a{color:white;margin-left:15px;text-decoration:none;}
+nav a:hover{color:#d4af37;}
+
+/* HEADER */
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url('building.jpg') center/cover;
+}
+
+/* LOGO */
+.logo{width:200px;}
+
+/* TITRE */
+h1{color:#d4af37;font-size:40px;text-shadow:0 0 10px #d4af37;}
+
+/* BOUTON */
+.btn{
+background:#d4af37;
+color:black;
+padding:10px 25px;
+margin-top:20px;
+text-decoration:none;
+border-radius:30px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+nav{flex-direction:column;}
+h1{font-size:28px;}
+}
+
+/* SECTION */
+section{padding:80px 20px;text-align:center;}
+
+/* FORM */
+form input, form textarea{
+width:90%;
+max-width:400px;
+margin:10px;
+padding:10px;
+border:none;
+border-radius:5px;
+}
+
+form button{
+background:#d4af37;
+border:none;
+padding:10px 20px;
+}
+
+/* FOOTER */
+footer{background:#000;padding:20px;text-align:center;}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div>Ramiza</div>
+<div>
+<a href="#home">Accueil</a>
+<a href="#contact">Contact</a>
+<a href="#pay">Paiement</a>
+</div>
+</nav>
+
+<header id="home">
+<img src="https://drive.google.com/file/d/1JuNNzHuiDlGq-2lg7jmkAacQHNC0avw9/view?usp=drive_link" class="logo">
+<h1>Ramiza Group™</h1>
+<p>Nous réalisons vos rêves</p>
+</header>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 style="color:#d4af37;">Contact</h2>
+
+<form action="https://formspree.io/f/TON_ID" method="POST">
+<input type="text" name="name" placeholder="Nom" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message" placeholder="Message"></textarea>
+<br>
+<button type="submit">Envoyer</button>
+</form>
+
+<p>Email : ramizacompany@gmail.com</p>
+</section>
+  
 <!-- PAIEMENT -->
 <section id="pay">
 <h2 style="color:#d4af37;">Paiement</h2>
