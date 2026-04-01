@@ -1,54 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramiza Group</title>
+
 <style>
-* {
-  box-sizing: border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#111;color:white;}
 
-body {
-  font-family: Arial;
-  font-size: 17px;
-}
-
-.container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.container img {vertical-align: middle;}
-
-.container .content {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-</style>
-</head>
-<body>
-
-<h2>Ramiza Group</h2>
-
-<div class="container">
-  <img src="https://imgur.com/sEu0Gg3.jpg" alt="Notebook" style="width:100%;">
-  <div class="content">
-    <h1>Ramiza Group</h1>
-    <p>Ramiza Group delivers comprehensive solutions with highly efficient, client-focused sales services tailored to meet your specific needs. We ensure fast, reliable service to guarantee optimal customer satisfaction within the shortest possible time. Additionally, our real estate agency provides professional support in the purchase, sale, and rental of properties with the highest standards of expertise.</p>
-  </div>
-</div>
-  
 /* NAVBAR */
 nav{
 position:fixed;
 width:100%;
 top:0;
-background:rgba(0,0,0,0.8);backdrop-filter:blur(10px);border-bottom:1px solid #d4af37;
+background:#000;
 display:flex;
 justify-content:space-between;
 padding:15px 30px;
@@ -66,16 +32,12 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url('building.jpg') center/cover;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url('https://imgur.com/sEu0Gg3.jpg') center/cover;
 }
 
-/* LOGO */
 .logo{width:200px;}
 
-/* TITRE */
-h1{color:#d4af37;font-size:40px;text-shadow:0 0 10px #d4af37;}
-
-/* BOUTON */
+h1{color:#d4af37;font-size:40px;}
 .btn{
 background:#d4af37;
 color:black;
@@ -127,9 +89,9 @@ footer{background:#000;padding:20px;text-align:center;}
 </nav>
 
 <header id="home">
-<img src="https://imgur.com/4AVWFEW.jpg" class="logo">
+<img src="https://imgur.com/4AVWFEW.png" class="logo">
 <h1>Ramiza Group™</h1>
-<p>Nous réalisons vos rêves</p>
+<p>Business & Investissement</p>
 </header>
 
 <!-- CONTACT -->
@@ -146,7 +108,7 @@ footer{background:#000;padding:20px;text-align:center;}
 
 <p>Email : ramizacompany@gmail.com</p>
 </section>
-  
+
 <!-- PAIEMENT -->
 <section id="pay">
 <h2 style="color:#d4af37;">Paiement</h2>
